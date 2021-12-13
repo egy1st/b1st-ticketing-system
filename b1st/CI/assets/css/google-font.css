@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(gk5FxslNkTTHtojXrkp-xBEur64QvLD-0IbiAdTUNXE.woff2) format('woff2'), url(gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format
+('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw
+.woff2) format('woff2'), url(cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw
+.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg
+.woff2) format('woff2'), url(k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM
+.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8
+.woff2) format('woff2'), url(0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0
+.woff) format('woff');
+}

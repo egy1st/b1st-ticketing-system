@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-- body responsive --*/
+
+.container{padding-left:0;
+           padding-right:0;
+}
+.sub_container{width:100%;
+               max-width:1100px;
+			   margin: 0 auto;
+               padding: 0;
+}
+.page_title{width:100%;
+	        max-width:1090px;			
+			padding-bottom:0px;
+			}
+.right_panel{margin-top:25px;}			
+.right_panel .bttn{margin-bottom:10px;}
+
+.show_ticketpanel{width:auto;
+                 height:28px;
+				 position:absolute;
+				 border:solid 1px #ae3d3d;
+				 color:rgba(255,255,255,1);
+				 font-size:25px;
+				 font-weight:bold;
+				 text-align:center;
+				 line-height: 25px;
+				 border-radius:4px;
+				 padding: 0 34px 0 10px;
+				 cursor:pointer;
+				 z-index:999;
+				 display:none;
+}
+
+.show_ticketpanel .tic{color: #DA4C4C;
+                       font-size:15px;       
+                       text-shadow: 1px 1px 1px #be3434;
+					   float:left;
+					   
+}
+
+.show_ticketpanel .edit_all {
+    background-color: #ae3d3d;
+    border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 0px;
+    border-right: 1px solid #d96969;
+    border-top-right-radius: 3px;
+	border-top-left-radius: 0px;
+    color: #fff;
+    font-size: 22px;    
+    padding: 3px 8px; 
+	margin-left:68px;
+	float:left;
+	line-height: 20px;   
+}
+
+ul.tabs li{margin-bottom:0px !important;}
+
+table.tablesorter thead tr .header span{white-space: nowrap;}
+
+#subject ul li a{color:rgba(0,0,0,.8);}
+
+#periodform .form_holder .select_cover{width:150px;}
+
+/*-- header navigation --*/
+
+.header_all{width:100%;}
+ nav a{ padding: 0 8px;}
+.navigation{display:none;
+            font-size: 23px;
+            padding-left: 9px;
+			padding-top:2px;            
+			cursor:pointer;
+}
+.navi{font-size:14px;
+}
+
+@media screen and (max-width: 1060px) {
+	.nav_all{width:90%;}
+	 nav{width:100%;}
+	 
+	.right_panel{padding-right:20px;}
+	
+	.pil_extra{float:left;}
+	.product_box{float:left;
+                 margin-left:20px;
+			     overflow:hidden;
+                }
+	.tickt_txt span.arrow_ping{padding-left: 56%;}	
+	
+	.main_section{width:100% !important;}		
+	
+		#periodselect{
+		float: none;
+		width:100%;
+	}
+
+	.ticketinfo{
+	float:none;
+	width:100%; 
+}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	.headding_bl{background:none; height:auto; }
+	.headding_bl p{background-color: #e2e2e4; width:100%; margin-left:0px; padding-left:15px;}
+	.drop_down_pi{width:100%;}
+	
+	.main_panel{width:100%;}
+	.main_pro_pi{margin-right:5%;
+	             width: 94%;
+	             overflow:auto;
+                }
+    /*.main_panel table tr th .spany{padding: 0 19px 0 9px; width:auto;}*/				
+}
+
+/*411 was 980 by maa}*/				
+}
+@media screen and (max-width: 411) {
+	.navigation{display:block; 
+	            background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+				width:99%;
+				}
+	
+	nav{display:none;}			
+   .nav_all{height:auto;         
+		    background:none;
+		 }
+
+   nav ul li{float:left;
+             width: 100%;
+		     background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+   nav li.bar_side{background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+   nav li ul{position:relative; top: 0px;}
+   nav li ul li{background-image:none; padding-left:8%;}
+   
+   
+   #leftside, #rightside{width:100% !important;
+             float:left;
+   }
+   
+   .all_dro{width:100%;}
+   .all_dro input, .all_dro select, .all_dro button{float:left; margin-bottom:10px;}
+
+
+
+}
+
+@media screen and (max-width: 670px) {
+   
+   .headline {float: left;
+              width: 100%;
+             }
+   .right_panel {float: left;
+                 width: 100%;
+            }
+
+
+}
+
+@media screen and (max-width: 640px) {
+	
+	.right_panel .bttn{float:left;
+	                   margin-right:10px;
+	                   margin-left:0px !important;	                   
+					   }
+    .welcometext{margin-right:8px;}	
+	
+	.main_section{padding-top:0px;
+	              position:relative; 
+				  height: auto; 
+				  min-height:720px;
+				  }
+	#click_hre{display:none;}
+    .pil_extra{width:0px;
+           overflow:hidden;
+		   position:absolute;
+		   }
+    .product_box {float: left;
+                  margin-left: 0px;
+                  margin-top: 44px;		   				   
+}
+
+.show_ticketpanel{display:block;}
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+	
+	#showprogressbar{width: 84%;}
+    .progress-bar progress{width:100%;}
+    .progress-bar .progress-value{width:100%;
+                                  text-align:center;
+     }
+
+	
+}
+
+@media screen and (max-width: 390px) {
+.all_dro input, .all_dro select{width:80% !important;}
+.all_dro select.input_list, .all_dro select[type="password"], .all_dro select[type="submit"]{width:82% !important;}
+
+.enquiry_box input.input_txt, .enquiry_box input[type="password"], .enquiry_box input[type="submit"]{width:71% !important;}
+
+.fileds .form_holder input[type="text"]{margin-bottom:6px;}
+}
+
+
+@media screen and (max-width: 322px) {
+	.show_ticketpanel .tic{display:none;}
+	.show_ticketpanel .edit_all{margin-left:0px;}
+	.show_ticketpanel{padding: 0 19px 0 10px;}
+
+}
+
+.show_ticket{width:218px; z-index:999; display:block;
+}
+
+.move{left:225px;}
+.show_ticket, .move{
+-webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}

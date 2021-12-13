@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navigation{display:none;}
+#pi-all{min-height:275px}
+
+
+
+@media screen and (max-width: 410px) {
+	.navigation{display:block; 
+	            background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+				width:99%;
+				}
+	.navigation{font-size: 23px;
+            padding-left: 9px;
+			padding-top:2px;            
+			cursor:pointer;
+   }			
+	
+	nav{display:none;
+	    position:absolute;
+		z-index: 99999999;
+		}			
+   .nav_all{height:auto;         
+		    background:none;
+		 }
+
+   nav ul li{float:left;
+             width: 100%;
+		     background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+   nav li.bar_side{background: url("../images/nav_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+   nav li ul{position:relative; top: 0px;}
+   nav li ul li{background-image:none; padding-left:8%;}
+   
+  
+    .frm_area{width:98%;}
+    .left_frm_side{width:96%; margin-left:2%; margin-right:2%;} 
+	.left_frm_side input.frm_nme, .left_frm_side input[type="password"], .left_frm_side input[type="submit"]{width:85% !important;}
+	.sel_con{width:89.5% !important;}
+	.area_txt{width:85% !important;}
+	
+	.right_frm_side{width:96%;
+	                padding-left:2%; 
+					padding-right:2%;
+	                float:left;
+					margin-top:0px;
+	}
+	
+	.spany{white-space: nowrap;}
+	
+}
+
+
+@media screen and (max-width: 300px) {
+	.sel_con{width:90.8% !important;}
+	.hdder_frm {background: url("../images/contact_hdder.png") no-repeat scroll 28% 0 rgba(0, 0, 0, 0);	}
+	#pi-all {overflow: scroll;}
+	
+	.wrapper_progress{width: 266px !important;} 
+	
+	
+	
+}

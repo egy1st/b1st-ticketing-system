@@ -1,0 +1,2 @@
+<div class="on_off <?php if($admindet->online_status==1) { ?> online <?php } if($admindet->online_status==0) { ?> offline <?php } ?>"></div><?php echo $admindet->username;?> <?php if($admindet->privilege_group_id==1) { echo ""; } ?>
+                    <div class="close_this" onclick="closefunchat('<?php echo $admindet->id;?>')">X</div>

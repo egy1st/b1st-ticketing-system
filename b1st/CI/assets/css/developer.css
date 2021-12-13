@@ -1,0 +1,14 @@
+﻿.header_all{overflow:visible;}    
+nav li ul{position:absolute;
+          background:#F5F5F5;
+          z-index:999;
+          width:150px;
+          top: 39px;
+          display:none;
+}
+nav li:hover ul{display:block;} 
+nav li ul li{width:100%;
+             float:left;
+             background:url(../images/submenu_bg.jpg) bottom center repeat-x;;
+             
+}
