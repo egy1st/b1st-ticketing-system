@@ -18,21 +18,46 @@ B1ST a  Premium Ticketing System
 7. Integration
 8. First login
 9. Modules
-10. Adding Basic Data .................... 16 Adding new Company ........... 16 Adding new Department ....... 18 Adding Ticket's Priorities ....... 20 
-
-Ticketing .................................. 22 Adding Tickets ..................... 22 Receiving emails as tickets .... 24 Receiving Tweets as tickets .. 28 Ticket's Status ..................... 31 Filtering Tickets .................... 32 Searching for a Ticket ........... 33 Statistics .............................. 34 Product's Functionality  ............. 37 Adding new Product ............. 37 Adding FAQs  ....................... 39 Canned Messages ................ 42 Knowledge-Base .................. 44 
-
-Customization .......................... 50 Themes ............................... 50 Languages ........................... 53 Responsiveness .................... 55 
-
-Configuration & Settings ........... 57 Settings ............................... 57 How to configure TS ............. 64 
-
-Security & Safety ...................... 66 Backup data & Restore them  66 Virus Protection .................... 68 Spam Detection & prevention ................................................................................ 69 
-
-Admins & Privileges .................. 70 Adding Admin/Users ............. 70 Setting Privileges.................. 72 
-
-Extras ...................................... 74 Chat with clients .................. 74 Mobile Verification ................ 76 Attaching & Uploading Files .. 79 
-
-Rating System ...................... 80 Response Time .................... 81 Auto-Respond Message ........ 82 grAvatar .............................. 83 reCAPTCHA .......................... 84 
+10. Adding Basic Data
+11. Adding new Company
+12. Adding new Department
+13. Adding Ticket's Priorities
+14. Ticketing
+15. Adding Tickets
+16. Receiving emails as tickets
+17. Receiving Tweets as tickets
+18. Ticket's Status
+19. Filtering Tickets
+20. Searching for a Ticket
+21. Statistics
+22. Product's Functionality
+23. Adding new Product
+24. Adding FAQs
+25. Canned Messages
+26. Knowledge-Base
+27. Customization
+28. Themes
+29. Languages
+30. Responsiveness
+31. Configuration & Settings
+32. Settings
+33. How to configure TS
+34. Security & Safety
+35. Backup data & Restore them
+36. Virus Protection
+37. Spam Detection & prevention
+38. Admins & Privileges
+39. Adding Admin/Users
+40. Setting Privileges
+41. Extras
+42. Chat with clients
+43. Mobile Verification
+44. Attaching & Uploading Files
+45. Rating System
+46. Response Time
+47. Auto-Respond Message
+48. grAvatar
+49. reCAPTCHA 
 
 **Introduction![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.001.png)**
 
