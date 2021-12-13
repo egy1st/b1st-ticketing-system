@@ -1,4 +1,5 @@
-﻿B1ST 
+**B1ST**
+-------
 
 a Premium Ticketing System 
 
@@ -994,3 +995,9 @@ All rights reserved. ![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.1
 
 EgyFirst Software, LLC. 2005-2016 
 PAGE84 / NUMPAGES84
+=======
+# b1st
+Free Premium Tickting System
+help desk
+developed in PHP
+>>>>>>> ee1ef8ea64faf834ab8d969bc9e9ae6cc98cde3b
