@@ -1,8 +1,20 @@
+Watch Introduction Video Tutorial
+-----
+
 [![Introduction Video Tutorial](img/intro.png)](https://vimeo.com/656342336 "Introduction Video Tutorial")
 
-[![configuration Video Tutorial](img/configuration.png)](https://vimeo.com/manage/videos/656346599 "configuration Video Tutorial")
+
+**Watch Configuration Video Tutorial**
+----
+
+[![configuration Video Tutorial](img/configuration.png)](https://vimeo.com/manage/videos/656346599 "Configuration Video Tutorial")
+
+*Watch Customization Video Tutorial*
+---
 
 [![Customization Video Tutorial](img/customization.png)](https://vimeo.com/656349727 "Customization Video Tutorial")
+
+***Watch Integration Video Tutorial***
 
 [![Integration Video Tutorial](img/integration.png)](https://vimeo.com/656352047 "Integration Video Tutorial")
 
