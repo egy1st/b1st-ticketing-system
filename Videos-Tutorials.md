@@ -17,7 +17,11 @@ Watch Introduction Video Tutorial
 
 [![Customization Video Tutorial](img/customization.png)](https://vimeo.com/656349727 "Customization Video Tutorial")
 
-***Watch Integration Video Tutorial***
+
+
+**Watch Integration Video Tutorial**
+====
+
 [![Integration Video Tutorial](img/integration.png)](https://vimeo.com/656352047 "Integration Video Tutorial")
 
 
