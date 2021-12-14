@@ -1,4 +1,4 @@
-**B1ST Ticketing System **
+B1ST Ticketing System
 -------
 
 B1ST a  totally Free but Premium Ticketing System
