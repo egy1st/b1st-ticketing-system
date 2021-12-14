@@ -1019,13 +1019,4 @@ o ![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.137.png)
 
 ![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.138.png)
 
-All rights reserved. ![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.139.png)![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.140.png)
-
-EgyFirst Software, LLC. 2005-2016 
-PAGE84 / NUMPAGES84
-=======
-# b1st
-Free Premium Tickting System
-help desk
-developed in PHP
->>>>>>> ee1ef8ea64faf834ab8d969bc9e9ae6cc98cde3b
+All rights reserved. 
