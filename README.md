@@ -1,11 +1,9 @@
-**B1ST**
+**B1ST Ticketing System **
 -------
 
-a Premium Ticketing System 
+B1ST a  totally Free but Premium Ticketing System
 
 Copyright © 2016-2022  by EGY1ST Software & ZeroBytes for Deep Learning.
-
-B1ST a  Free but Premium Ticketing System
 
 **Table of contents![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.001.png)**
 
