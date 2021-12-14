@@ -3,9 +3,9 @@
 
 a Premium Ticketing System 
 
-Copyright © 2016-2022  by EGY1ST Software.
+Copyright © 2016-2022  by EGY1ST Software & ZeroBytes for Deep Learning.
 
-B1ST a  Premium Ticketing System
+B1ST a  Free but Premium Ticketing System
 
 **Table of contents![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.001.png)**
 
@@ -314,7 +314,7 @@ B1st comes with 27 built-in modules that enable you to get wide variety of funct
 1. Configuration Module
 1. Status Module
 
-Among the 27 Modules B1ST comes equipped with, the are 12 core modules while the other 15 modules are premium ones. 
+Among the 27 Modules B1ST comes equipped with, the are 12 core modules while the other 15 modules are premium ones but still you can activate them from your end for free. 
 
 Core Modules![](img/Aspose.Words.5a7a66c4-6162-47da-b6ed-76af7c95837f.009.png)
 
