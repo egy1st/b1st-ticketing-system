@@ -1,4 +1,4 @@
-[![Introduction Video Tutorial](img/basics.png)](https://vimeo.com/656342336 "Introduction Video Tutorial")
+[![Introduction Video Tutorial](img/intro.png)](https://vimeo.com/656342336 "Introduction Video Tutorial")
 
 [![configuration Video Tutorial](img/configuration.png)](https://vimeo.com/manage/videos/656346599 "configuration Video Tutorial")
 
