@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+ini_set('error_reporting', E_ALL);
+
+ session_start();
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,8 +54,8 @@ if (!isset($_POST['db_username']) or (is_object($_POST['db_username']) and strle
 
             if (!empty($_POST['db_username']) && !empty($_POST['db_server']) && !empty($_POST['db_name'])) {
 
-                $mysqlConnection = mysql_connect($_POST['db_server'], $_POST['db_username'], $_POST['db_password']);
-                $db_selected = mysql_select_db($_POST['db_name'], $mysqlConnection);
+                $mysqlConnection = mysqli_connect($_POST['db_server'], $_POST['db_username'], $_POST['db_password']);
+                $db_selected = mysqli_select_db($_POST['db_name'], $mysqlConnection);
                 if (!$mysqlConnection) {
                     $error = 2;
 				} elseif (!$db_selected) {
