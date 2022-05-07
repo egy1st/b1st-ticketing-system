@@ -70,7 +70,7 @@ class CI_DB_mysql_driver extends CI_DB {
 			$this->hostname .= ':'.$this->port;
 		}
 
-		return @mysql_connect($this->hostname, $this->username, $this->password, TRUE);
+		return @ mysqli_connect($this->hostname, $this->username, $this->password, TRUE);
 	}
 
 	// --------------------------------------------------------------------
@@ -120,7 +120,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	function db_select()
 	{
-		return @mysql_select_db($this->database, $this->conn_id);
+		return @mysqli_select_db($this->database, $this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -143,7 +143,7 @@ class CI_DB_mysql_driver extends CI_DB {
 
 		if ($this->use_set_names === TRUE)
 		{
-			return @mysql_query("SET NAMES '".$this->escape_str($charset)."' COLLATE '".$this->escape_str($collation)."'", $this->conn_id);
+			return @mysqli_query("SET NAMES '".$this->escape_str($charset)."' COLLATE '".$this->escape_str($collation)."'", $this->conn_id);
 		}
 		else
 		{
@@ -176,7 +176,7 @@ class CI_DB_mysql_driver extends CI_DB {
 	function _execute($sql)
 	{
 		$sql = $this->_prep_query($sql);
-		return @mysql_query($sql, $this->conn_id);
+		return @mysqli_query($sql, $this->conn_id);
 	}
 
 	// --------------------------------------------------------------------
@@ -310,13 +310,13 @@ class CI_DB_mysql_driver extends CI_DB {
 	   		return $str;
 	   	}
 
-		if (function_exists('mysql_real_escape_string') AND is_resource($this->conn_id))
+		if (function_exists('mysqli_real_escape_string') AND is_resource($this->conn_id))
 		{
-			$str = mysql_real_escape_string($str, $this->conn_id);
+			$str = mysqli_real_escape_string($str, $this->conn_id);
 		}
-		elseif (function_exists('mysql_real_escape_string'))
+		elseif (function_exists('mysqli_real_escape_string'))
 		{
-			$str = mysql_real_escape_string($str);
+			$str = mysqli_real_escape_string($str);
 		}
 		else
 		{

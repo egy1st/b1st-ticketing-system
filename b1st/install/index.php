@@ -1,12 +1,4 @@
-<?php
-
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-ini_set('error_reporting', E_ALL);
-
- session_start();
-
- ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +10,6 @@ ini_set('error_reporting', E_ALL);
 </head>
 <body>
 <?php
-
 
 define('AUTH_KEY', "$fsgVoBpx5Zri.ri1&/|h>sbMx| ?%]$V&y4N;f}-K-mupG=/Lgxt+TU>4>C)s{?");
 
@@ -54,42 +45,43 @@ if (!isset($_POST['db_username']) or (is_object($_POST['db_username']) and strle
 
             if (!empty($_POST['db_username']) && !empty($_POST['db_server']) && !empty($_POST['db_name'])) {
 
-                $mysqlConnection = mysqli_connect($_POST['db_server'], $_POST['db_username'], $_POST['db_password']);
-                $db_selected = mysqli_select_db($_POST['db_name'], $mysqlConnection);
+                $mysqlConnection =  mysqli_connect($_POST['db_server'], $_POST['db_username'], $_POST['db_password']);
+                $db_selected = mysqli_select_db($mysqlConnection, $_POST['db_name']);
                 if (!$mysqlConnection) {
                     $error = 2;
 				} elseif (!$db_selected) {
                    $error = 6;
                  } else {
                     if (isset($_POST['db_name']) and !empty($_POST['db_name'])) {
-                        $dbname = mysql_real_escape_string($_POST['db_name']);
+                        $dbname = mysqli_real_escape_string($mysqlConnection, $_POST['db_name']);
                     }
 
                     $sql = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '$dbname'";
-                    $sql_res = mysql_query($sql);
-                    if (mysql_num_rows($sql_res) == 0) {
-                        if (mysql_query("CREATE DATABASE $dbname", $mysqlConnection)) {
-                            $db = mysql_select_db($dbname, $mysqlConnection);
+                    $sql_res = mysqli_query($mysqlConnection, $sql);
+                    if (mysqli_num_rows($sql_res) == 0) {
+                        if (mysqli_query("CREATE DATABASE $dbname", $mysqlConnection)) {
+                            $db = mysqli_select_db($dbname, $mysqlConnection);
                             require_once('../tableconfig.php');
 							if(!empty($instab))
 		                      {
                     			   foreach($instab as $sql)
 	                        		{
-				                      	 mysql_query ($sql) ;						 
+				                      	 mysqli_query ($sql) ;						 
 									}
 																			
 		                      }
 						  require_once('insert.php');
-						  $res = mysql_query('SHOW TABLES');
-                          while ($row = mysql_fetch_array($res, MYSQL_NUM))
+						  $res = mysqli_query('SHOW TABLES');
+                          //while ($row = mysqli_fetch_array()($res, MYSQL_NUM))
+						  while ($row = mysqli_fetch_array($res))
                             {
-                              $res2 = mysql_query("TRUNCATE TABLE `$row[0]`");
+                              $res2 = mysqli_query("TRUNCATE TABLE `$row[0]`");
                             }
 							if(!empty($ins2tab))
 		                      {
                     			   foreach($ins2tab as $sql2)
 	                        		{
-				                      	mysql_query ($sql2) ;						 
+				                      	mysqli_query ($sql2) ;						 
 									}
 																			
 		                      }	     
@@ -102,27 +94,28 @@ if (!isset($_POST['db_username']) or (is_object($_POST['db_username']) and strle
                         }
                     } else {
                         //$error = 5;
-                        $db = mysql_select_db($dbname, $mysqlConnection);
+                        $db = mysqli_select_db($mysqlConnection, $dbname);
                         require_once('../tableconfig.php');
 						if(!empty($instab))
 		                      {
                     			   foreach($instab as $sql)
 	                        		{
-				                      	 mysql_query ($sql) ;						 
+				                      	 mysqli_query ($mysqlConnection, $sql) ;						 
 									}
 																			
 		                      }
 						require_once('insert.php');
-						$res = mysql_query('SHOW TABLES');
-                        while ($row = mysql_fetch_array($res, MYSQL_NUM))
+						$res = mysqli_query($mysqlConnection, 'SHOW TABLES');
+						//while ($row = mysqli_fetch_array()($res, MYSQL_NUM)) maa
+                        while ($row = mysqli_fetch_array($res))
                             {
-                              $res2 = mysql_query("TRUNCATE TABLE `$row[0]`");
+                              $res2 = mysqli_query($mysqlConnection, "TRUNCATE TABLE `$row[0]`");
                             }
 							if(!empty($ins2tab))
 		                      {
                     			   foreach($ins2tab as $sql2)
 	                        		{
-				                      	 mysql_query ($sql2) ;						 
+				                      	 mysqli_query ($mysqlConnection, $sql2) ;						 
 									}
 																			
 		                      }	     
